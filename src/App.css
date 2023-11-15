@@ -1,7 +1,38 @@
-
-@media (max-width:700px)
-{
-  body{
-    color:red;
+*{box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
   }
+  
+  #root,.App,html{
+    height: 100%;
+    width: 100%;
+    background-color:#ffffff;
+    text-align: center;
+    font-size: 16px;
+  }
+
+.search-container
+{
+  width: 70%;
+  margin: 2rem auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-box
+{
+  padding-left:20px;
+  height: 2rem;
+  width: 100%;
+  background-color: #263238;
+  color:white;
+  border:none;
+  border-radius: 50px;
+}
+.search-icon{
+  margin-right: 10px;
+  height: 80%;
+  position: absolute;
+  right: 0;
 }
