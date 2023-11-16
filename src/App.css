@@ -1,3 +1,4 @@
+/* reset */
 *{box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -12,6 +13,7 @@
     font-size: 16px;
   }
 
+/* Search component ----------------------------------------------- */
 .search-container
 {
   width: 80%;
@@ -31,7 +33,10 @@
   font-size: 1.2rem;
   border:none;
   border-radius: 50px;
-
+}
+.search-box:focus
+{
+background-color: #263238;
 }
 .search-icon{
   margin-right: 10px;
