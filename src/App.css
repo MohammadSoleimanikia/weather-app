@@ -87,3 +87,9 @@ background-color: #263238;
   font-weight: 400;
 
 }
+.second-section{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

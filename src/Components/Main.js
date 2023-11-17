@@ -1,5 +1,8 @@
 import rain from '../Assets/rain.png'
 function Main(props){
+    if(props.conditionId==800){
+        console.log(1);
+    }
     return (
         <div className="main">
             <div className="first-section">
@@ -8,6 +11,17 @@ function Main(props){
                     <h1>{props.temper}°</h1>
                     <h2>{props.condition}</h2>
                 </div>
+            </div>
+            <div className='second-section'>
+                <div className='location'>
+                    <h1>mashhad</h1>
+                    <p>data</p>
+                </div>
+                <div className='details'>
+                    <h1>humid</h1>
+                    <p>data</p>
+                </div>
+
             </div>
         </div>
     )
