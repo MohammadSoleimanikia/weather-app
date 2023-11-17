@@ -44,3 +44,46 @@ background-color: #263238;
   position: absolute;
   right: 0;
 }
+
+
+/* main component--------------------------------------------------------- */
+.main{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+
+}
+.first-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.condition-icon
+{
+  width: 40%;
+}
+
+.condition-temper
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.condition-temper>h1
+{
+  color:#E8505B;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+}
+.condition-temper>h2
+{
+  margin-top: -1rem;
+  padding-left: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+
+}
