@@ -10,14 +10,27 @@ import Future from './Components/Future';
 
 function App() {
  
-  const [city,setCity]=useState("");
+  const [cityInput,setCity]=useState("mashhad");
   const [inputText, setInputText] = useState('');
- 
-//using useEffect hook every time the city name changed fetch function called 
-  useEffect(()=>{
-    
-  },[city])
+  const [cityName,setCityName]=useState('');
 
+
+// using useEffect hook every time the city name changed fetch function called 
+  useEffect(()=>{async function fetchData() {
+    try {
+      const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&appid=2270e97332ee6c4df43830271accfc5c`
+      );
+      const data = await response.json();
+      setCityName(data.name);
+    } catch (error) {
+      console.log('Error:', error);
+    }
+  }
+    fetchData();
+},[cityInput]);
+
+  
   const handleInputChange=(e)=>
     {
       setInputText(e.target.value);
@@ -25,7 +38,7 @@ function App() {
 
 const handleFormSubmit=(e)=>{
 e.preventDefault();
-if(inputText.trim() !='')
+if(inputText.trim() !=='')
       {
        setCity(inputText);
       }
@@ -35,7 +48,7 @@ if(inputText.trim() !='')
   return (
     <div className="App">
       <Search handleInputChange={handleInputChange} handleFormSubmit={handleFormSubmit} inputText={inputText}/>
-      <Main city={city}/>
+      <Main city={cityName}/>
       <Future/>
     </div>
   );

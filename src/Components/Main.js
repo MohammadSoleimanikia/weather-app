@@ -1,4 +1,4 @@
-function Main(){
-    return (<h1>main</h1>);
+function Main(props){
+    return (<h1>{props.city}</h1>);
     }
     export default Main
