@@ -14,7 +14,7 @@ function Main(props){
             </div>
             <div className='second-section'>
                 <div className='location'>
-                    <h1>mashhad</h1>
+                    <h1>{props.cityName}</h1>
                     <p>data</p>
                 </div>
                 <div className='details'>
