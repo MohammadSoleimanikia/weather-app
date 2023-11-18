@@ -51,7 +51,7 @@ background-color: #263238;
   display: flex;
   flex-direction: column;
   width:100%;
-  padding-left: 3rem;
+  padding:0 2rem;
 
 }
 .first-section{
@@ -92,8 +92,9 @@ background-color: #263238;
 }
 .second-section{
   margin-top: 4rem;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: spa;
   align-items: flex-start;
 }
 
@@ -112,8 +113,7 @@ background-color: #263238;
 {
   display:flex;
   align-items: center;
-  justify-content: center;
-  gap:5rem
+  justify-content: space-between;
 }
 .humidity-icon,.wind-icon
 {
@@ -127,4 +127,11 @@ width: 15%;
 .wind-data>h3,.humidity-data>h3{
   font-weight: 450;
   font-size: 0.9rem;
+}
+.details
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap:1rem
 }
