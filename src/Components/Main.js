@@ -14,12 +14,10 @@ function Main(props){
             </div>
 
             <div className='second-section'>
-                
                 <div className='location'>
                     <h1 className='city-name'>{props.cityName}</h1>
                     <p className='date'>{props.formattedDate}</p>
                 </div>
-
                 <div className='details'>
                     <div className='wind'>
                         <img className='wind-icon' src={wind} alt="wind icon"/>

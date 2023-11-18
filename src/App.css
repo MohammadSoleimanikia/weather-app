@@ -72,7 +72,7 @@ background-color: #263238;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right:2rem
+  margin-right:2rem;
 }
 
 .condition-temper>h1
@@ -84,10 +84,9 @@ background-color: #263238;
 .condition-temper>h2
 {
   margin-top: -1rem;
-  /* padding-left: 0.5rem; */
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 400; 
 
 }
 .second-section{
@@ -100,6 +99,8 @@ background-color: #263238;
 
 .city-name
 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .location{
@@ -107,6 +108,12 @@ background-color: #263238;
   width: 50%;
   flex-direction: column;
   align-items: flex-start;
+}
+.date
+{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
 }
 
 .humidity,.wind
@@ -117,7 +124,7 @@ background-color: #263238;
 }
 .humidity-icon,.wind-icon
 {
-width: 15%;
+width: 25%;
 }
 
 .wind-data>p,.humidity-data>p{
@@ -136,3 +143,4 @@ width: 15%;
   align-items: flex-end;
   gap:1rem
 }
+
