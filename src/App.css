@@ -51,11 +51,12 @@ background-color: #263238;
   display: flex;
   flex-direction: column;
   width:100%;
+  padding-left: 3rem;
 
 }
 .first-section{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
 
@@ -83,7 +84,7 @@ background-color: #263238;
 .condition-temper>h2
 {
   margin-top: -1rem;
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -103,7 +104,6 @@ background-color: #263238;
 .location{
   display: flex;
   width: 50%;
-  padding-left: 4rem;
   flex-direction: column;
   align-items: flex-start;
 }
