@@ -148,10 +148,26 @@ width: 25%;
   margin-top: 2rem;
   width: 100vw;
   height: 100vh;
-  background-color: cyan;
 }
 .future-item{
-  width: 10%;
-  height: 10%;
-  background-color: #E8505B;
+  height: 20%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width:90%;
+  margin: 1rem auto;
+  background-color: rgba(0, 0, 0, 0.051);
+  border-radius: 20px;
+  padding: 0 1rem;;
+}
+.future-item >div
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+.temper-item{
+  font-weight: 300;
+  font-size: 0.9rem;
 }
