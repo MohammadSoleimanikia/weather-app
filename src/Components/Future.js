@@ -2,7 +2,7 @@ function Future(){
     return (
     <div className="future ">
         <div className="future-item">
-            <p className='date'>saturday</p>
+            <p className='date-item'>saturday</p>
             <div>
                 <p className='condition-item'>Sunny</p>
                 <p className='temper-item'>15/15</p>
@@ -10,7 +10,7 @@ function Future(){
         </div>
 
         <div className="future-item">
-        <p className='date'>saturday</p>
+        <p className='date-item'>saturday</p>
             <div>
                 <p className='condition-item'>Sunny</p>
                 <p className='temper-item'>15/15</p>
@@ -18,7 +18,7 @@ function Future(){
         </div>
 
         <div className="future-item">
-        <p className='date'>saturday</p>
+        <p className='date-item'>saturday</p>
             <div>
                 <p className='condition-item'>Sunny</p>
                 <p className='temper-item'>15/15</p>

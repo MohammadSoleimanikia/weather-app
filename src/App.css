@@ -149,17 +149,19 @@ width: 25%;
   width: 100vw;
   height: 100vh;
 }
-.future-item{
-  height: 20%;
+.future-item {
+  height: 18%;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
-  width:90%;
+  width: 90%;
   margin: 1rem auto;
   background-color: rgba(0, 0, 0, 0.051);
   border-radius: 20px;
-  padding: 0 1rem;;
+  padding: 0 1rem;
 }
+
+
 .future-item >div
 {
   display: flex;
@@ -170,4 +172,8 @@ width: 25%;
 .temper-item{
   font-weight: 300;
   font-size: 0.9rem;
+}
+.date-item{
+  font-size: 1rem;
+  font-weight: 400;
 }
