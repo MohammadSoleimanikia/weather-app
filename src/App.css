@@ -147,10 +147,9 @@ width: 25%;
 {
   margin-top: 2rem;
   width: 100vw;
-  height: 100vh;
 }
 .future-item {
-  height: 12%;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
