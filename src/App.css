@@ -5,7 +5,7 @@
   font-family: 'Poppins', sans-serif;
   }
   
-  #root,.App,html{
+  #root,.App,html,body{
     height: 100%;
     width: 100%;
     background-color:#ffffff;
@@ -141,4 +141,17 @@ width: 25%;
   flex-direction: column;
   align-items: flex-end;
   gap:1rem
+}
+/* future component ----------------------------------------------- */
+.future
+{
+  margin-top: 2rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: cyan;
+}
+.future-item{
+  width: 10%;
+  height: 10%;
+  background-color: #E8505B;
 }
