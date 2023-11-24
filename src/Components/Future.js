@@ -22,7 +22,7 @@ function Future(props) {
 
   // each time data is received and available extracting data initialized
   useEffect(() => {
-    // Data fetch from JSON
+    // isToday used for ignoring today data if it was in json file
     function isToday(dateString) {
       const today = new Date();
       const itemDate = new Date(dateString);
@@ -33,13 +33,21 @@ function Future(props) {
       );
     }
 
-    // Function to extract desired information
+    // Function to extract desired information [dayName,condition , min and max temp]
     function extractData(json) {
       if (!json.list) {
         return []; // Return an empty array if list is not available
       }
 
-      // Filter out data for today
+       // Function to get day name from a date string
+  function getDayName(dateString) {
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const date = new Date(dateString);
+    const dayIndex = date.getDay();
+    return daysOfWeek[dayIndex];
+  }
+  
+      // remove today data 
       const filteredData = json.list.filter(item => !isToday(item.dt_txt));
 
       // Group data by day
@@ -58,9 +66,10 @@ function Future(props) {
         const minTemperature = Math.min(...temperatures);
         const maxTemperature = Math.max(...temperatures);
         const condition = groupedData[day][0].weather[0].main;
+        const dayName = getDayName(groupedData[day][0].dt_txt);
 
         return {
-          day,
+          dayName,
           condition,
           minTemperature,
           maxTemperature,
@@ -78,10 +87,10 @@ function Future(props) {
     <div className="future">
       {extractedData.map((item, index) => (
         <div className="future-item" key={index}>
-          <p className="date-item">{item.day}</p>
+          <p className="date-item">{item.dayName}</p>
           <div>
             <p className="condition-item">{item.condition}</p>
-            <p className="temper-item">{`${item.minTemperature}/${item.maxTemperature}`}</p>
+            <p className="temper-item">{`${Math.round(item.minTemperature)}/${Math.round(item.maxTemperature)}`}</p>
           </div>
         </div>
       ))}
