@@ -19,6 +19,7 @@ function App() {
   const [humidity,setHumidity]=useState('');
   const [condition,setCondition]=useState('');
 
+
 //curent date
 const currentDate = new Date();
 // Define an array of weekday names
@@ -54,6 +55,7 @@ const formattedDate = `${dayOfWeek}, ${dayOfMonth} ${month}`;
     fetchData();
 },[cityInput]);
 
+
   
   const handleInputChange=(e)=>
     {
@@ -73,7 +75,7 @@ if(inputText.trim() !=='')
     <div className="App">
       <Search handleInputChange={handleInputChange} handleFormSubmit={handleFormSubmit} inputText={inputText}/>
       <Main condition={condition} cityName={cityName} temper={temper} conditionId={conditionId} wind={wind} humidity={humidity} formattedDate={formattedDate}/>
-      <Future/>
+      <Future cityName={cityName} />
     </div>
   );
 }
